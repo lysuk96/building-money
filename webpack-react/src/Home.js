@@ -18,7 +18,7 @@ import "./css/home.css";
 
 //dummy
 import CoinDummy from "./dummy/CoinDummy";
-import PastDummy from "./dummy/PastDummy"
+import PastDummy from "./dummy/PastDummy";
 
 //page
 import Rank from "./Result"
@@ -55,6 +55,7 @@ function Home() {
                         <Select
                             options={PastDummy}
                             onChange={setPast}
+                            isSearchable={false}
                             defaultValue={{ label: "1주전", value: 0 }}
                         />
                         <div style={{ marginTop: "10px" }}>
