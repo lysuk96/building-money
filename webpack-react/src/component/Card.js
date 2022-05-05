@@ -1,12 +1,23 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-export const CardWrapper = styled.div`
+export const HomeCardWrapper = styled.div`
   display: grid;
   overflow: visible;
   padding: 0 0 32px;
   margin: 48px auto 0;
   width: 300px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+`;
+
+export const ResultCardWrapper = styled.div`
+  display: grid;
+  overflow: visible;
+  padding: 0 0 32px;
+  margin: 48px auto 0;
+  width: 70%;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;

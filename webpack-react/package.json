@@ -29,6 +29,7 @@
     "mini-css-extract-plugin": "^2.6.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
     "react-select": "^5.3.1",
     "style-loader": "^3.3.1",
     "styled-component": "^2.8.0",
