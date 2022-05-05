@@ -30,7 +30,7 @@ function Result() {
     const pastInfo = PastDummy.find(element => element.value == pastId);
     const resultInfo = ResultDummy.find(element=> element.id == resultId);
 
-    console.log(resultInfo)
+    // console.log(resultInfo)
     const ranks = resultInfo.ranks //[1,2,3,4]
     const profits = resultInfo.profits //[100, 90, 80, 70]
 
