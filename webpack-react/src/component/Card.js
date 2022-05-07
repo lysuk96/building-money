@@ -167,3 +167,39 @@ export const CardLink = styled.a`
     color: #777;
   }
 `;
+
+export const Img = styled.img`
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    background-position: center;
+`;
+
+export const H6 = styled.h6`
+    font-family: Yeon Sung, cursive;
+    font-size: 1.3rem;
+    margin-block-start: 0em;
+    margin-block-end: 0px;
+`;
+
+export const TextFieldset = styled.fieldset`
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+
+  & + & {
+    margin-top: 24px;
+  }
+
+  &:nth-last-of-type(2) {
+    margin-top: 32px;
+  }
+
+  &:last-of-type {
+    text-align: center;
+  }
+`;

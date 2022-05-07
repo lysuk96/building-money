@@ -8,17 +8,20 @@ import {
     CardHeading,
     CardBody,
     CardFieldset,
-    CardButton,
-    CardLink
+    CardLink,
+    Img,
+    H6,
+    TextFieldset
 } from "./component/Card";
 
 //css
-import "./css/home.css";
+import "./css/result.scss";
 
 //data
 import CoinDummy from "./dummy/CoinDummy";
 import PastDummy from "./dummy/PastDummy";
 import ResultDummy from "./dummy/ResultDummy";
+import RewardDummy from "./dummy/RewardDummy";
 
 function Result() {
     const params = useParams();
@@ -29,22 +32,23 @@ function Result() {
     const coinInfo = CoinDummy.find(element => element.value == coinId);
     const pastInfo = PastDummy.find(element => element.value == pastId);
     const resultInfo = ResultDummy.find(element=> element.id == resultId);
+    
+    const ranks = resultInfo.ranks //[ema, 존버..]
+    const profits = resultInfo.profits //[110, 100...]
+    
+    const rewardInfo = RewardDummy.find(e => e.profit[0]<= profits[0] && e.profit[1] >= profits[1])
 
-    // console.log(resultInfo)
-    const ranks = resultInfo.ranks //[1,2,3,4]
-    const profits = resultInfo.profits //[100, 90, 80, 70]
-
-    // 1등은 100점 /n 2등은 90점 ... 입니다!
+    // deploy ranking
     const map = ranks.map((e, idx) => {
         if (ranks[idx] == "존버") {
             return (
-                <h3 style={{ color: 'blue' }}>
+                <h3 style={{ color: '#5f85bb' }}>
                     {idx + 1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
         } else if (idx == 0) {
             return(
-                <h3 style={{color: 'red'}}>
+                <h3 style={{color: '#e5195f'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
@@ -56,23 +60,30 @@ function Result() {
             )
         }
     }
-
     );
 
     return(
         <div className="Home">
             <ResultCardWrapper>
                 <CardBody>
-                    <CardHeader>
-                        <CardHeading>"{coinInfo.label}"을(를) "{pastInfo.label}"에 샀더라면...</CardHeading>
-                    </CardHeader>
+                    <h6 style={{ fontFamily: 'Yeon Sung, cursive', fontSize: '1.75rem' }}>
+                        "{coinInfo.label}"을(를) "{pastInfo.label}"에 샀더라면...
+                    </h6>
 
-                    <CardFieldset>
-                        <div style={{ marginTop: "10px" }}>
-                            <a>투자방식 랭크</a>
-                            {map}
-                        </div>
-                    </CardFieldset>
+                    <div>
+                        {map}
+                    </div>
+
+                    <TextFieldset>
+                        <H6>
+                            <span className="emphasize">{ranks[0]} 방식</span>으로
+                            <br/><span className="emphasize">100만원</span>을 투자했다면<br/><br/>
+                            <span className="emphasize">"{rewardInfo.label}"</span>인데... 🥲
+                        </H6>
+                        <Img src={rewardInfo.img}/>
+                    </TextFieldset>
+
+                    <CardLink>그 방식이 뭔지는 알려주셔야죠</CardLink>
 
                 </CardBody>
             </ResultCardWrapper>

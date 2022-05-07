@@ -26,8 +26,8 @@ import Rank from "./Result"
 function Home() {
     let navigate = useNavigate()
     
-    const [coin, setCoin] = useState({ label: "BTC", value: 0 })
-    const [past, setPast] = useState({ label: "1주전", value: 0 })
+    const [coin, setCoin] = useState(CoinDummy[0])
+    const [past, setPast] = useState(PastDummy[0])
 
     const id = coin.value * PastDummy.length + past.value
     // console.log(id)
