@@ -169,10 +169,10 @@ export const CardLink = styled.a`
 `;
 
 export const Img = styled.img`
-    width: auto;
+    width: 90%;
     height: auto;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 400px;
+    max-height: 400px;
     background-position: center;
 `;
 
