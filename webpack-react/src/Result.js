@@ -80,7 +80,7 @@ function Result() {
                             <br/><span className="emphasize">100만원</span>을 투자했다면<br/><br/>
                             <span className="emphasize">{rewardInfo.label}</span>인데... 🥲
                         </H6>
-                        <Img src={rewardInfo.img}/>
+                        <Img src={'/img'+rewardInfo.img}/>
                     </TextFieldset>
 
                     <CardLink>그 방식이 뭔지는 알려주셔야죠</CardLink>

@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin}  = require("clean-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -46,7 +47,11 @@ module.exports = {
       filename: 'index.html',
     }), 
      // 전의 빌드를 삭제함
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+      { from: 'public/img', to: 'img' }
+    ]})
   ],
   devtool: 'source-map',
   devServer: {
