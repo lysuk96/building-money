@@ -171,8 +171,8 @@ export const CardLink = styled.a`
 export const Img = styled.img`
     width: auto;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 70%;
+    max-height: 70%;
     background-position: center;
 `;
 
