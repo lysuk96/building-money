@@ -42,19 +42,19 @@ function Result() {
     const map = ranks.map((e, idx) => {
         if (ranks[idx] == "존버") {
             return (
-                <h3 style={{ color: '#5f85bb' }}>
+                <h3 style={{ color: '#5f85bb', marginBlockStart: '0.5em', marginBlockEnd: '0.5em' }}>
                     {idx + 1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
         } else if (idx == 0) {
             return(
-                <h3 style={{color: '#e5195f'}}>
+                <h3 style={{color: '#e5195f', marginBlockStart: '0.5em', marginBlockEnd: '0.5em'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
         } else {
             return(
-                <h3>
+                <h3 style={{marginBlockStart: '0.5em', marginBlockEnd: '0.5em'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
