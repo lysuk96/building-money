@@ -83,7 +83,7 @@ function Result() {
                         <Img src={'/img'+rewardInfo.img}/>
                     </TextFieldset>
 
-                    <CardLink onClick={() => window.open('https://forms.gle/hEZqSRRkcXMM9jVf8', '_blank')}>그 방식이 뭔지는 알려주셔야죠</CardLink>
+                    <CardLink onClick={() => window.open('https://forms.gle/hEZqSRRkcXMM9jVf8', '_blank')}>그 방식이 대체 뭔데요..?</CardLink>
 
                 </CardBody>
             </ResultCardWrapper>
