@@ -48,7 +48,7 @@ function Result() {
             )
         } else if (idx == 0) {
             return(
-                <h3 style={{color: '#e5195f', marginBlockStart: '0.5em', marginBlockEnd: '0.5em', fontSize: 'calc(1.0em + 1vw)'}}>
+                <h3 style={{color: '#e5195f', marginBlockStart: '0.5em', marginBlockEnd: '0.5em', fontSize: 'calc(0.7em + 1vw)'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
