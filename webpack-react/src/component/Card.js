@@ -156,7 +156,7 @@ export const CardButton = styled.button`
 
 export const CardLink = styled.a`
   display: inline-block;
-  font-size: 12px;
+  font-size: calc(12px + 0.5vw);
   text-decoration: none;
   color: #aaa;
   border-bottom: 1px solid #ddd;
