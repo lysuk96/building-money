@@ -17,7 +17,7 @@ export const ResultCardWrapper = styled.div`
   overflow: visible;
   padding: 0 0 32px;
   margin: 48px auto 0;
-  width: 80%;
+  width: 90%;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -178,7 +178,7 @@ export const Img = styled.img`
 
 export const H6 = styled.h6`
     font-family: Yeon Sung, cursive;
-    font-size: 1.3rem;
+    font-size: calc(1.0em + 0.5vw);
     margin-block-start: 0em;
     margin-block-end: 0px;
 `;

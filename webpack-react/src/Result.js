@@ -42,19 +42,19 @@ function Result() {
     const map = ranks.map((e, idx) => {
         if (ranks[idx] == "존버") {
             return (
-                <h3 style={{ color: '#5f85bb', marginBlockStart: '0.5em', marginBlockEnd: '0.5em' }}>
+                <h3 style={{ color: '#5f85bb', marginBlockStart: '0.5em', marginBlockEnd: '0.5em' , fontSize: 'calc(1.0em + 1vw)'}}>
                     {idx + 1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
         } else if (idx == 0) {
             return(
-                <h3 style={{color: '#e5195f', marginBlockStart: '0.5em', marginBlockEnd: '0.5em'}}>
+                <h3 style={{color: '#e5195f', marginBlockStart: '0.5em', marginBlockEnd: '0.5em', fontSize: 'calc(0.7em + 1vw)'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
         } else {
             return(
-                <h3 style={{marginBlockStart: '0.5em', marginBlockEnd: '0.5em'}}>
+                <h3 style={{marginBlockStart: '0.5em', marginBlockEnd: '0.5em', fontSize: 'calc(0.7em + 1vw)'}}>
                     {idx+1}위 {ranks[idx]} : {profits[idx]}%
                 </h3>
             )
@@ -66,7 +66,7 @@ function Result() {
         <div className="Home">
             <ResultCardWrapper>
                 <CardBody>
-                    <h6 style={{ fontFamily: 'Yeon Sung, cursive', fontSize: '1.75rem' }}>
+                    <h6 style={{ fontFamily: 'Yeon Sung, cursive', fontSize: 'calc(1.75em + 0.5vw)' }}>
                         "{coinInfo.label}"을(를)<br/>"{pastInfo.label}"에 샀더라면...
                     </h6>
 
@@ -76,7 +76,7 @@ function Result() {
 
                     <TextFieldset>
                         <H6>
-                            <span className="emphasize">{ranks[0]} 방식</span>으로
+                            <span className="emphasize">{ranks[0]}</span> 방식으로
                             <br/><span className="emphasize">100만원</span>을 투자했다면<br/><br/>
                             <span className="emphasize">{rewardInfo.label}</span>... 🥲
                         </H6>
