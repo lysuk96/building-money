@@ -55,7 +55,7 @@ function Result() {
         } else {
             return(
                 <h3 style={{marginBlockStart: '0.5em', marginBlockEnd: '0.5em', fontSize: 'calc(0.7em + 1vw)'}}>
-                    {idx+1}위 {ranks[idx]} : {profits[idx]}%
+                    {idx+1}위 {ranks[idx]} : +{profits[idx]}%
                 </h3>
             )
         }
