@@ -56,7 +56,7 @@ function Home() {
                             options={PastDummy}
                             onChange={setPast}
                             isSearchable={false}
-                            defaultValue={{ label: "1주전", value: 0 }}
+                            defaultValue={{ label: "1주 전", value: 0 }}
                         />
                         <div style={{ marginTop: "10px" }}>
                             <a>에 샀더라면...😳</a>
