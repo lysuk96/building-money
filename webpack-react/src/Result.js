@@ -36,7 +36,7 @@ function Result() {
     const ranks = resultInfo.ranks //[ema, 존버..]
     const profits = resultInfo.profits //[110, 100...]
     
-    const rewardInfo = RewardDummy.find(e => e.profit[0]<= profits[0] && e.profit[1] >= profits[1])
+    const rewardInfo = RewardDummy.find(e => e.profit[0]<= profits[0] && e.profit[1] > profits[0])
 
     // deploy ranking
     const map = ranks.map((e, idx) => {
