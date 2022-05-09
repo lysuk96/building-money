@@ -78,7 +78,7 @@ function Result() {
                         <H6>
                             <span className="emphasize">{ranks[0]} 방식</span>으로
                             <br/><span className="emphasize">100만원</span>을 투자했다면<br/><br/>
-                            <span className="emphasize">{rewardInfo.label}</span>인데... 🥲
+                            <span className="emphasize">{rewardInfo.label}</span>... 🥲
                         </H6>
                         <Img src={'/img'+rewardInfo.img}/>
                     </TextFieldset>
