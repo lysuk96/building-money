@@ -67,7 +67,7 @@ function Result() {
             <ResultCardWrapper>
                 <CardBody>
                     <h6 style={{ fontFamily: 'Yeon Sung, cursive', fontSize: 'calc(1.75em + 0.5vw)' }}>
-                        "{coinInfo.label}"을(를)<br/>"{pastInfo.label}"에 샀더라면..
+                        "{coinInfo.label}"을(를)<br/>"{pastInfo.label}"에 샀더라면...
                     </h6>
 
                     <div>
